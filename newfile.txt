@@ -1,0 +1,27 @@
+ const fs = require('fs');
+ const os = require ("os")
+ const [ , , arg1] = process.argv;
+ const printName = (name) =>{
+    console.log("i m " , name);
+ }
+// printName(data.name );
+
+// fs.readFile(`./${arg1}`,"utf-8",(err,data)=>{
+//     if(err){console.log(err)}
+//     else{
+//         data = JSON.parse(data)
+//         printName(data.name)
+//     }
+//   })
+// console.log(process.argv);
+// const content = "i'm the new file";
+// fs.writeFile(`./newfile.txt`, content,(err)=>{
+//     if(err){console.log(err)}else{console.log("file written")}
+// })
+// console.log(os.version())
+// console.log(os.totalmem())
+// console.log(os.freemem())
+
+let date = new Date();
+console.log(date.toLocaleTimeString())
+
